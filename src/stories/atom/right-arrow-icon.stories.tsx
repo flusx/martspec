@@ -9,7 +9,11 @@ export default {
 
 export const RightArrowIconStory: Story<{
     items: object;
-}> = (props) => <RightArrowIcon {...props.items} />;
+}> = (props) => (
+        <div style={{fontSize: "1.9rem"}}>
+            <RightArrowIcon {...props.items} />
+        </div>
+    );
 
 RightArrowIconStory.args = {
     items: {

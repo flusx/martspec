@@ -10,22 +10,24 @@ export default {
 } satisfies StoryDefault;
 
 export const ReviewStory: Story = () => (
-    <Review
-        appId={appIds["vitamin"]}
-        codes={{
-            countryCode: Locale.countryCode,
-            languageCode: Locale.language,
-        }}
-        text={{
-            head: _("REVIEW.HEAD"),
-            description: _("REVIEW.DESCRIPTION"),
-            link: _("REVIEW.LINK_ALL_REVIEWS"),
-            fillerCard: {
-                head: [_("REVIEW.FILLER_CARD.HEAD1"), _("REVIEW.FILLER_CARD.HEAD2"), _("REVIEW.FILLER_CARD.HEAD3")],
-                link: _("REVIEW.FILLER_CARD.LINK"),
-            },
-        }}
-    />
+    <div className="ms-base-new ms-base-page">
+        <Review
+            appId={appIds["vitamin"]}
+            codes={{
+                countryCode: Locale.countryCode,
+                languageCode: Locale.language,
+            }}
+            text={{
+                head: _("REVIEW.HEAD"),
+                description: _("REVIEW.DESCRIPTION"),
+                link: _("REVIEW.LINK_ALL_REVIEWS"),
+                fillerCard: {
+                    head: [_("REVIEW.FILLER_CARD.HEAD1"), _("REVIEW.FILLER_CARD.HEAD2"), _("REVIEW.FILLER_CARD.HEAD3")],
+                    link: _("REVIEW.FILLER_CARD.LINK"),
+                },
+            }}
+        />
+    </div>
 );
 
 ReviewStory.storyName = "Review";

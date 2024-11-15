@@ -8,7 +8,7 @@ export default {
 } satisfies StoryDefault;
 
 export const TitleTextCardStory: Story = () => (
-    <div style={{ maxWidth: "793px" }}>
+    <div className="ms-base-new" style={{ maxWidth: "793px" }}>
         <TitleTextCard
             title={_("EMOTION.LIST1.LI1_HEAD")}
             text={_("EMOTION.LIST1.LI1_TEXT")}
